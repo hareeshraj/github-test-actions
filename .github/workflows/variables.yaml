@@ -1,0 +1,11 @@
+name: Variables Workflow
+on: 
+  workflow_dispatch:
+env:
+  PORT: ${{ secrets.PORT }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Variables Workflow Action
+        run: echo "This workflow demonstrates the use of variables in GitHub Actions!"
