@@ -1,0 +1,8 @@
+name: Push Workflow
+on: ["push"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Push Workflow Action
+        run: echo "This workflow runs on push to any branch!"
